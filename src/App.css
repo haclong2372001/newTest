@@ -32,7 +32,93 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.app {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: blue;
+  border-radius: 3px;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 100px;
+  border-bottom: 2px solid rgb(168, 159, 159);
+}
+.tag-container span:hover{
+  border-bottom: 2px solid blue;
+}
+.tag-container span {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.tag-container span.active {
+  background-color: #f0f0f0;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.task-list li.completed .task-text {
+  text-decoration: line-through;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-all-button {
+  display: block;
+  margin: 10px auto;
+  background-color: red;
+  border-radius: 5px;
+  border-color: white;
+  color: #f0f0f0;
 }
