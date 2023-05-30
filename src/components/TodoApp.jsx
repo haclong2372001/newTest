@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FaCheckCircle, FaTrash } from 'react-icons/fa';
 import '../App.css';
 
 const App = () => {
@@ -104,10 +103,11 @@ const App = () => {
                         >
                             {task.text}
                         </span>
-                        <FaTrash
+                        <button
                             className="delete-icon"
                             onClick={() => handleDeleteTask(task.id)}
-                        />
+                            class ="des"
+                        >delete</button>
                     </li>
                 ))}
             </ul>

@@ -54,7 +54,9 @@ h1 {
   display: flex;
   margin-bottom: 10px;
 }
-
+.des{
+  background-color: white;
+}
 input[type='text'] {
   flex: 1;
   padding: 5px;
